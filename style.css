@@ -1,0 +1,384 @@
+/* now in this the proper external css is used with the respect of the page name as (index.html) */
+/* body styling like gives box sizing, and gives the font size, and family so by default these styles were applied. */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 15px;
+}
+/* nav bar styling */
+.nav{
+    height: 80px;
+    background-color: white;
+}
+/* styling of left aligned items in the nav bar such as (search bar and linkedin logo.) */
+#leftitems{
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    padding: 15px;
+    margin-left:50px; 
+    margin-top: 20px;
+    float: left;
+}  
+/* styling of linkedin logo.  */
+.logo{
+    height: 25px;
+    width: 30px;
+    margin-right: 10px;
+}
+/* styling of search bar  */
+.search{
+    width: 300px;
+    background-color: rgb(187, 210, 218);
+    border: none;
+    font-size: 20px;
+}
+/* styling of search icon inside the search bar. */
+#leftitems i{
+    position:relative;
+    right: 20px;
+    font-size: 20px;
+    top: 1px;
+    cursor: pointer;
+}
+#leftitems i:hover{
+    background-color: lightgray;
+}
+/* styling of right aligned items in the nav bar. */
+#rightitems{
+     display: flex;
+     float: right;
+}
+/* in the right aligned items there is a menu bar. So styling of menu bar is started. */
+.menu{
+    text-align: center;
+}
+/* combinator is used for styling the links in menu. */
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+/* styling of icons in the menu of nav bar.  combinator is used. */
+.menu i {
+    width: 80px;
+}
+/* gives hover effect to each element of menu in nav bar */
+.menu a:hover{
+         background-color: lightgray;
+}
+.profile{
+    height: 55px;
+    width: 55px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+h4{
+    margin-top: 20px;
+    border-left: 2px solid black;
+    margin-right: 60px;
+}
+/* all the panels such as right panel, middle panel and left panel is under the class content */
+.content{
+    height: 1200px;
+    margin: 0%;
+    background-color: rgb(216, 216, 216);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+/* Styling of left panel is started which is named as .profile_details. */
+.left_panel{
+    display: flex;
+}
+.profile_details{
+    height: 695px;
+    width: 260px; 
+   border-radius: 10px;
+   cursor: pointer;
+    margin-left: 60px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.color{
+    background-image: url('./background.jpg');
+    height: 80px;
+    width: 260px;
+    background-size: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/* styling of the profile image. */
+.image{
+    height: 55px;
+    width: 55px;
+    position: relative;
+    top: 45px;
+    left: 100px;
+    border-radius: 50px;
+   
+}
+.name,.info{
+    text-align: center;
+   
+}
+.number{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(12, 57, 204);
+    font-weight: bolder;
+}
+p{
+    margin-top: 0px;
+    font-weight: bolder;
+}
+/* some boxes are styled of the left panel. */
+.box2{
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.box2:hover{
+    background-color: lightgray;
+}
+.box3{
+   border: 1px solid gray;
+   box-sizing: border-box;
+   padding: 10px;
+   border-bottom-left-radius: 5px; 
+   border-bottom-right-radius: 5px; 
+}
+.box3:hover{
+    background-color: lightgray;
+}
+.recent{
+    height: 310px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+/* styling of middle panel. */
+.middle_panel{
+    display: grid;
+     grid-template-rows: 113px 113px 113px;
+     margin-left: 30px;
+}
+/* middle panel is divide in three parts(upper,middle,lower.) */
+/* styling of upper panel. */
+/* For the middle panel the grid property used to define the upper middle and lower parts of middle_panel. */
+.upper{
+    height: 100px;
+    width: 650px;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+/* hover effect given to upper icons and for this the combinator is used. */
+.upper span:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+/* styling of the post bar  */
+.upper .post{
+    width: 550px;
+    height: 40px;
+    border-radius: 35px;
+    font-size: 18px;
+}
+/* styling of text written under span in upper part of middle_panel.combinator is used. text written for icons (like,comment, share,send)*/
+.upper span{
+    color: black;
+}
+/* styling of middle part.  */
+.middle{
+    height: 450px;
+    width: 650px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling of flipkart header. flex property is used to take control over the default properties. */
+.flipkart_header{
+    display: flex;
+}
+.middle i:hover{
+    background-color: lightgray;
+}
+/* styling of the class-flipkart */
+.flipkart{
+    height: 75px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* styling of flipkart logo. and for this combinator is used. */
+.flipkart img{
+    height: 50px;
+    width: 50px;
+}
+/* styling of link of flipkart given under the logo of flipkart on the web page. */
+.flipkart a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+/* styling of class-infromation of flipkart */
+.information{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+/* here the styling of class-post1 which defines the post image of flipkart. for this combinator is used. */
+.post1 img{
+    height: 300px;
+    width: 650px;
+}
+/* styling of class-appreciate buttons. Icons and text styling. for icons i used Font awesome website. */
+.appreciate_buttons{
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+}
+.like,.comment,.share,.send{
+    width: 100px;
+    font-size: 20px;
+}
+/* combinator is used. */
+.appreciate_buttons button{
+    background-color: white;
+    border: white;
+}
+.appreciate_buttons button:hover{
+    background-color: lightgray;
+}
+.lower{
+    height: 540px;
+     width: 650px; 
+    background-color:white;
+    margin-top: 350px;
+   box-sizing: border-box;
+   padding: 10px;
+} 
+.lower i:hover{
+    background-color: lightgray;
+}
+/* styling of right panel  */
+.right_panel{
+    display: grid;
+    grid-template-rows:113px 113px 113px ;
+    margin-left: 20px;
+}
+/* right panel is divide in three classes (linkedin_news,courses,our_feed). */
+.linkedin_news{
+    height: 330px;
+    width: 240px;
+    background-color: white;
+    display: flex;
+}
+.linkedin_news i{
+    border: 2px solid black;
+    height: 13px;
+    position: relative;
+    left: 220px;
+    top: 10px;
+    background-color: black;
+    color: white;
+    
+}
+/* combinator is used.   styling of div under the linkedin_news. */
+.linkedin_news div{
+    height: 60px;
+    width: 190px;
+}
+/* gives hover effect to full  class-linkedin_news.    same styling for the class-courses */
+.linkedin_news:hover{
+    background-color: lightgray;
+}
+.courses{
+    height: 230px;
+    width: 240px;
+    margin-top: 230px;
+    background-color: white;
+}
+.courses i{
+    border: 2px solid black;
+    height: 13px;
+    position: relative;
+    left: 220px;
+    top: 10px;
+    background-color: black;
+    color: white;
+}
+.courses div{
+    height: 60px;
+    width: 190px;
+}
+.courses:hover{
+    background-color: lightgray;
+}
+/* styling of class-our_feed */
+.our_feed{
+    height: 390px;
+    width: 240px;
+    background-color: white;
+    margin-top: 360px;
+}
+.our_feed i{
+    border: 2px solid black;
+    height: 13px;
+    position: relative;
+    left: 220px;
+    top: 10px;
+    background-color: black;
+    color: white;
+}
+/* styling of uniliver logo. */
+.uniliver_logo{
+    display: flex;
+}
+.uniliver_logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+/* styling of button is used to follow. */
+.follow{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/* hover effect given to follow button. */
+.follow:hover{
+    background-color: lightgray;
+}
+/* three feed are added in class-our_feed. styling of those three feeds. */
+#uniliver_feed{
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+}
+#flipkart_feed{
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+}
+#linkedin_feed{
+    margin-top: 10px;
+}
+
